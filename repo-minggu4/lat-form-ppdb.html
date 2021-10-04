@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulir</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="bg.jpg">
+</body>
+    <div class="container">
+        <h1 class="form">Formulir Pendaftaran</h1>
+    <form action="proses.php" method="POST" name="fpendaftaran">
+        <table>
+            <tr>
+                <td><label for="fnisn">NISN</label></td>
+                <td>: <input type="number" id="fnisn" name="fnisn" class="input"></td>
+            </tr>
+            <tr>
+                <td><label for="fsekolah">Asal Sekolah</label></td>
+                <td>: <input type="text" id="fsekolah" name="fsekolah" class="input"></label></td>
+            </tr>
+            <tr>
+                <td><label for="fthnLulus" >Tahun Lulus</label></td>
+				<td>: <input type="date" id="fthnLulus" name="fthnLulus" class="input"></td>
+            </tr>
+        </tr>
+        <tr>
+            <td><label for="fnama" >Nama Lengkap</label></td>
+            <td>: <input type="text" id="fname" name="fnama" class="input"></td>
+        </tr>
+        <tr>
+            <td><label for="fnik" >NIK</label></td>
+            <td>: <input type="number" id="fnik" name="fnik" class="input"></td>
+        </tr>
+        <tr>
+            <td><label for="ftempTanggal" >Tempat,Tanggal lahir</label></td>
+            <td>: <input type="text" id="fTTL" name="fTTL" class="input"></td> 
+        </tr>
+        <tr>
+            <td><label for="fjenisKel" >Jenis Kelamin</label></td>
+            <td>: 
+                <input type="radio" value="laki-laki" class="input">
+                <label for="laki" >Laki-laki</label>
+                <input type="radio" value="perempuan" class="input">
+                <label for="perempuan" >Perempuan</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="email" >Email Aktif</label></td>
+            <td>: <input type="email" id="email" name="email" class="input"></td>
+        </tr>
+        <tr>
+            <td><label for="falamat" >Alamat Lengkap</label></td>
+            <td>: <input type="text" id="falamat" name="falamat" class="input"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><label for="fKK" >Nomor Kartu Keluarga</label></td>
+            <td>: <input type="number" id="fKK" name="fKK" class="input"></td>
+        </tr>
+        <tr>
+            <td><label for="fayah" >Ayah Kandung</label></td>
+            <td>: <input type="text" id="fayah" name="fayah" class="input"></td>
+        </tr>
+        <tr>
+            <td><label for="fagamaAyah" >Agama</label></td>
+            <td>: <select id="fagamaAyah" name="fagamaAyah" class="input" required="">
+                <option value="">-silahkan pilih-</option>
+                <option value="">Islam</option>
+                <option value="">Kristen</option>
+                <option value="">Hindu</option>
+                <option value="">Budha</option>
+                <option value="">Katolik</option>
+                <option value="">Lainnya</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><label for="fpekerjaanAyah" >Pekerjaan</label></td>
+            <td>: <input type="text" id="fpekerjaanAyah" name="fpekerjaanAyah" class="input"></td>
+        </tr>
+        <tr>
+            <td><label for="fibu" >Ibu Kandung</label></td>
+            <td>: <input type="text" id="fibu" name="fibu" class="input"></td>
+        </tr>
+        <tr>
+            <td><label for="fagamaIbu" >Agama</label></td>
+            <td>: <select id="fagamaIbu" name="fagamaIbu" class="input" required="">
+                <option value="">-silahkan pilih-</option>
+                <option value="">Islam</option>
+                <option value="">Kristen</option>
+                <option value="">Hindu</option>
+                <option value="">Budha</option>
+                <option value="">Katolik</option>
+                <option value="">Lainnya</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><label for="fpekerjaanIbu" >Pekerjaan</label></td>
+            <td>: <input type="text" id="fpekerjaanIbu" name="fpekerjaanIbu" class="input"></td>
+        </tr>
+        <tr>
+            <td><label for="falamatOrtu" >Alamat Orang Tua</label></td>
+            <td>: <input type="text" id="falamatOrtu" name="falamatOrtu" class="input"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" name="fsubmit" value="submit" class="input"></td>
+        </tr>
+        </table>
+    </form>  
+    </div>
+</body>
